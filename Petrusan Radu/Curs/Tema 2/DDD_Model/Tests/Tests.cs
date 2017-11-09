@@ -74,6 +74,7 @@ namespace Tests
         [TestMethod]
         public void AdaugaClient()
         {
+            //Arrange
             var client = PersoanaFactory.Instance.CreazaClient("Popescu", "Ion", "1901225201354", TipClient.Fidel);
             var repository = new SalonRepository();
             var salon = repository.CautaSalon("Beauty");
@@ -83,6 +84,32 @@ namespace Tests
 
             //Assert
             Assert.IsTrue(repository.CautaSalon("Beauty").Clienti.Contains(client));
+        }
+
+        [TestMethod]
+        public void CautaSalonInexistent()
+        {
+            //Arrange
+            var repository = new SalonRepository();
+
+            //Act
+            var salon = repository.CautaSalon("Non-existing salon");
+
+            //Assert
+            Assert.IsNull(salon);
+        }
+
+        [TestMethod]
+        public void CautaSalon()
+        {
+            //Arrange
+            var repository = new SalonRepository();
+
+            //Act
+            var salon = repository.CautaSalon("Beauty");
+
+            //Assert
+            Assert.IsNotNull(salon);
         }
     }
 }
