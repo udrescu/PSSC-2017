@@ -15,3 +15,7 @@ C:\Users\Patrick\documents\visual studio 2015\Projects\PSSCTema2\PSSCTema2\bin\D
 C:\Users\Patrick\documents\visual studio 2015\Projects\PSSCTema2\PSSCTema2\bin\Debug\Repositories.Echipe.dll
 C:\Users\Patrick\documents\visual studio 2015\Projects\PSSCTema2\PSSCTema2\bin\Debug\Modele.Echipe.pdb
 C:\Users\Patrick\documents\visual studio 2015\Projects\PSSCTema2\PSSCTema2\bin\Debug\Repositories.Echipe.pdb
+C:\Users\Patrick\documents\visual studio 2015\Projects\PSSCTema2\PSSCTema2\bin\Debug\AfisareEchipe.dll
+C:\Users\Patrick\documents\visual studio 2015\Projects\PSSCTema2\PSSCTema2\bin\Debug\AfisareEchipe.pdb
+C:\Users\Patrick\documents\visual studio 2015\Projects\PSSCTema2\PSSCTema2\bin\Debug\AfisareJucatori.dll
+C:\Users\Patrick\documents\visual studio 2015\Projects\PSSCTema2\PSSCTema2\bin\Debug\AfisareJucatori.pdb

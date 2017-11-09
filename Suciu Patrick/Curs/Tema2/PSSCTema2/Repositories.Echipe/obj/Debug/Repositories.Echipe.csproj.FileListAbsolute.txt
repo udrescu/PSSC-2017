@@ -7,3 +7,5 @@ c:\users\patrick\documents\visual studio 2015\Projects\PSSCTema2\Repositories.Ec
 c:\users\patrick\documents\visual studio 2015\Projects\PSSCTema2\Repositories.Echipe\obj\Debug\Repositories.Echipe.csprojResolveAssemblyReference.cache
 c:\users\patrick\documents\visual studio 2015\Projects\PSSCTema2\Repositories.Echipe\obj\Debug\Repositories.Echipe.dll
 c:\users\patrick\documents\visual studio 2015\Projects\PSSCTema2\Repositories.Echipe\obj\Debug\Repositories.Echipe.pdb
+C:\Users\Patrick\documents\visual studio 2015\Projects\PSSCTema2\Repositories.Echipe\bin\Debug\Repositories.Jucatori.dll
+C:\Users\Patrick\documents\visual studio 2015\Projects\PSSCTema2\Repositories.Echipe\bin\Debug\Repositories.Jucatori.pdb

@@ -80,6 +80,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AfisareEchipe\AfisareEchipe.csproj">
+      <Project>{BB951A69-21B8-4460-A7FA-7ED392703920}</Project>
+      <Name>AfisareEchipe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AfisareJucatori\AfisareJucatori.csproj">
+      <Project>{6805DCFF-E093-4E67-9ABC-B582C33CF6AA}</Project>
+      <Name>AfisareJucatori</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Modele.Echipe\Modele.Echipe.csproj">
       <Project>{C2F75FE4-C799-440F-AEC6-58550974DB8A}</Project>
       <Name>Modele.Echipe</Name>

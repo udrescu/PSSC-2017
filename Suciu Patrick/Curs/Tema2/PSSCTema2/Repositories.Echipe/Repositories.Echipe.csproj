@@ -48,6 +48,10 @@
       <Project>{C2F75FE4-C799-440F-AEC6-58550974DB8A}</Project>
       <Name>Modele.Echipe</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Repositories.Jucatori\Repositories.Jucatori.csproj">
+      <Project>{6ca16a15-c14b-47db-9488-5971a9d4fad6}</Project>
+      <Name>Repositories.Jucatori</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

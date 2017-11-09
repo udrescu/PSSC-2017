@@ -8,7 +8,7 @@ namespace Modele.Echipe
 {
     public class Echipa
     {
-        String campionat;
+        String tara;
         int an_infiintare;
         int nr_jucatori;
         String nume;
@@ -18,12 +18,11 @@ namespace Modele.Echipe
         {
 
         }
-        public Echipa(String campionat, int an_infiintare, String culori,String nume)
+        public Echipa(String tara, int an_infiintare, String culori,String nume)
         {
-            this.campionat = campionat;
+            this.tara = tara;
             this.an_infiintare = an_infiintare;
             this.culori = culori;
-            this.jucatori_echipa = null;
             this.nr_jucatori = 0;
             this.nume = nume;
         }
@@ -48,9 +47,9 @@ namespace Modele.Echipe
         {
             return culori;
         }
-        public String get_campionat()
+        public String get_tara()
         {
-            return campionat;
+            return tara;
         }
         public String get_nume()
         {
