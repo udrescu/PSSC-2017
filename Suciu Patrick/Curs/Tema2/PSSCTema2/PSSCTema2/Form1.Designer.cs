@@ -241,9 +241,9 @@
             // 
             // buttonAfisare
             // 
-            this.buttonAfisare.Location = new System.Drawing.Point(518, 100);
+            this.buttonAfisare.Location = new System.Drawing.Point(518, 94);
             this.buttonAfisare.Name = "buttonAfisare";
-            this.buttonAfisare.Size = new System.Drawing.Size(208, 22);
+            this.buttonAfisare.Size = new System.Drawing.Size(208, 28);
             this.buttonAfisare.TabIndex = 37;
             this.buttonAfisare.Text = "Afisarea tutuor jucatorilor";
             this.buttonAfisare.UseVisualStyleBackColor = true;
@@ -253,7 +253,7 @@
             // 
             this.buttonEchipe.Location = new System.Drawing.Point(152, 94);
             this.buttonEchipe.Name = "buttonEchipe";
-            this.buttonEchipe.Size = new System.Drawing.Size(208, 25);
+            this.buttonEchipe.Size = new System.Drawing.Size(208, 28);
             this.buttonEchipe.TabIndex = 38;
             this.buttonEchipe.Text = "Afisarea tutuor echipelor";
             this.buttonEchipe.UseVisualStyleBackColor = true;

@@ -44,10 +44,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Modele.Campionat\Modele.Campionat.csproj">
-      <Project>{b7d6a67f-4702-41e5-889d-cab496c5eacf}</Project>
-      <Name>Modele.Campionat</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Modele.Echipe\Modele.Echipe.csproj">
       <Project>{c2f75fe4-c799-440f-aec6-58550974db8a}</Project>
       <Name>Modele.Echipe</Name>
