@@ -20,5 +20,9 @@ namespace Models.Gradina
             Nume = nume;
             Nota = nota;
         }
+        public override string ToString()
+        {
+            return Nume.ToString();
+        }
     }
 }

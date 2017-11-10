@@ -23,5 +23,9 @@ namespace Models.Gradina
             Tip = tip;
             Numar = numar;
         }
+        public override string ToString()
+        {
+            return Nume.ToString();
+        }
     }
 }

@@ -79,6 +79,9 @@ namespace tema2pssc
             //arrange
             var gradina = GradinaFactory.Instance.CreeazaGradina(1);
 
+            //act
+            //adaugat 11 plante - ar trebui sa se adauge doar 10 pt ca
+            //doar atatea locuri sunt in gradina
             gradina.AdaugaFloare("Garoafa", "Galben", 12);
             gradina.AdaugaFloare("Lalea", "Rosie", 1);
             gradina.AdaugaFloare("Lacramioara", "Alba", 10);

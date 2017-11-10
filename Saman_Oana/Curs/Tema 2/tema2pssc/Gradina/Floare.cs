@@ -23,6 +23,9 @@ namespace Models.Gradina
             Culoare = culoare;
             Numar = numar;
         }
-
+        public override string ToString()
+        {
+            return Nume.ToString();
+        }
     }
 }

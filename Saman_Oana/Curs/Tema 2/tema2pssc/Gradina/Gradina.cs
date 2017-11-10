@@ -94,7 +94,7 @@ namespace Models.Gradina
         public void SalataDeNota10()
         {
             int count = 0;
-            Console.Write("Am adaugat la salata ");
+            Console.Write("Am adaugat la salata fructe din urmatorii pomi: ");
             //primii 3 pomi cu nota mare
             foreach (Pom pom in Pomi.Valori)
             {
@@ -112,7 +112,7 @@ namespace Models.Gradina
         public void LegumePentruCiorba()
         {
             //seleccteaza doar radacinoasele
-            Console.Write("Am adaugat la ciorba ");
+            Console.Write("Am adaugat la ciorba: ");
             foreach (Leguma leguma in Legume.Valori)
             {               
                 if (leguma.Tip == TipLeguma.Radacina)

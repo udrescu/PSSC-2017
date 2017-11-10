@@ -61,7 +61,7 @@ namespace Repositories.Gradina
 
         public void AfiseazaFlori(Models.Gradina.Gradina gradina)
         {
-            Console.WriteLine(gradina.Flori.Valori.ToString());
+            Console.WriteLine(gradina.Flori.ToString());
         }
     }
 }

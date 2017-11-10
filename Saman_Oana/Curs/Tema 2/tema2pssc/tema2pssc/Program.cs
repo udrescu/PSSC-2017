@@ -44,8 +44,8 @@ namespace tema2pssc
 
             gradina.SalataDeNota10();
 
-            //var toatePlantele = new ToatePlantele();
-            //toatePlantele.AfiseazaToatePlantele(1);
+            var toatePlantele = new ToatePlantele();
+            toatePlantele.AfiseazaToatePlantele(1);
         }
     }
 }
