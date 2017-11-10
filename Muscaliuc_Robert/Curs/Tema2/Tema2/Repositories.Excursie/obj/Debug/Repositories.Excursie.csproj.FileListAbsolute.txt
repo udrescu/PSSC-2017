@@ -1,0 +1,7 @@
+C:\Users\RobertStefan\Documents\GitHub\PSSC-2017\Muscaliuc_Robert\Curs\Tema2\Tema2\Repositories.Excursie\bin\Debug\Repositories.Excursie.dll
+C:\Users\RobertStefan\Documents\GitHub\PSSC-2017\Muscaliuc_Robert\Curs\Tema2\Tema2\Repositories.Excursie\bin\Debug\Repositories.Excursie.pdb
+C:\Users\RobertStefan\Documents\GitHub\PSSC-2017\Muscaliuc_Robert\Curs\Tema2\Tema2\Repositories.Excursie\obj\Debug\Repositories.Excursie.csprojResolveAssemblyReference.cache
+C:\Users\RobertStefan\Documents\GitHub\PSSC-2017\Muscaliuc_Robert\Curs\Tema2\Tema2\Repositories.Excursie\obj\Debug\Repositories.Excursie.dll
+C:\Users\RobertStefan\Documents\GitHub\PSSC-2017\Muscaliuc_Robert\Curs\Tema2\Tema2\Repositories.Excursie\obj\Debug\Repositories.Excursie.pdb
+C:\Users\RobertStefan\Documents\GitHub\PSSC-2017\Muscaliuc_Robert\Curs\Tema2\Tema2\Repositories.Excursie\bin\Debug\Model.Excursie.dll
+C:\Users\RobertStefan\Documents\GitHub\PSSC-2017\Muscaliuc_Robert\Curs\Tema2\Tema2\Repositories.Excursie\bin\Debug\Model.Excursie.pdb
