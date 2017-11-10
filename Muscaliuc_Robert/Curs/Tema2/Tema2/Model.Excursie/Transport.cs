@@ -10,6 +10,8 @@ namespace Modele.Excursie
     {
         private string tipTransport;
         private int durataTransport;
+        public string TipTransport { get { return tipTransport; } }
+
 
         internal Transport(string tip, int durata)
         {

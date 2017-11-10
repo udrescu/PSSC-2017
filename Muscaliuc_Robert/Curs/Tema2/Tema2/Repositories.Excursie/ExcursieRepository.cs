@@ -9,6 +9,7 @@ namespace Repositories.Excursie
     public class ExcursieRepository:Repositories.Excursie.IExcursieRepository
     {
         private static List<Modele.Excursie.Excursie> _excursii = new List<Modele.Excursie.Excursie>();
+        int sumaElemente = 0;
 
         public ExcursieRepository()
         {
@@ -27,8 +28,17 @@ namespace Repositories.Excursie
             var detalii = _excursii.Find(x => x.numeCazare.NumeCazare.Equals(nume));
             Console.WriteLine(detalii.numeCazare.NumeCazare);
             Console.WriteLine(detalii.tipPret);
+            Console.WriteLine(detalii.transport.TipTransport);
 
         }
+
+        public int numarElementeLista()
+        {
+            sumaElemente = _excursii.Count;
+            return sumaElemente;
+        }
+
+        
 
     }
 }

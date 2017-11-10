@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Repositories.Excursie
 {
-    interface IExcursieRepository
+    public interface IExcursieRepository
     {
         void adaugaExcursie(Modele.Excursie.Excursie excursie);
+        void afiseazaDetaliiExcursie(string nume);
     }
 }

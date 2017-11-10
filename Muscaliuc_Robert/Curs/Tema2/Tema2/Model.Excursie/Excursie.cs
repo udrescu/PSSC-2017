@@ -26,14 +26,22 @@ namespace Modele.Excursie
             
         }
 
-        public void seteazaTipPretInEuro()
+        public string seteazaTipPretInEuro()
         {
             tipPret = TipPret.Euro;
+            return "euro";
         }
-         public void seteazaTipPretInLei()
+         public string seteazaTipPretInLei()
         {
             tipPret = TipPret.Lei;
+            return "lei";
         }
+
+         public void seteazaTipTransport(string tipTransport)
+         {
+             transport = new Transport(tipTransport,5);
+             
+         }
 
 
 
