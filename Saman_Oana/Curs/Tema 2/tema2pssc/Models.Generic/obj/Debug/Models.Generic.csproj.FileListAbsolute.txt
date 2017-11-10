@@ -1,0 +1,5 @@
+c:\users\oana\documents\visual studio 2017\Projects\tema2pssc\Models.Generic\bin\Debug\Models.Generic.dll
+c:\users\oana\documents\visual studio 2017\Projects\tema2pssc\Models.Generic\bin\Debug\Models.Generic.pdb
+c:\users\oana\documents\visual studio 2017\Projects\tema2pssc\Models.Generic\obj\Debug\Models.Generic.csprojResolveAssemblyReference.cache
+c:\users\oana\documents\visual studio 2017\Projects\tema2pssc\Models.Generic\obj\Debug\Models.Generic.dll
+c:\users\oana\documents\visual studio 2017\Projects\tema2pssc\Models.Generic\obj\Debug\Models.Generic.pdb

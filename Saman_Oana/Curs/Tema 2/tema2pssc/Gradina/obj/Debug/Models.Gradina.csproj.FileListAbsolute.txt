@@ -1,0 +1,7 @@
+c:\users\oana\documents\visual studio 2017\Projects\tema2pssc\Gradina\bin\Debug\Models.Generic.dll
+c:\users\oana\documents\visual studio 2017\Projects\tema2pssc\Gradina\bin\Debug\Models.Generic.pdb
+c:\users\oana\documents\visual studio 2017\Projects\tema2pssc\Gradina\obj\Debug\Models.Gradina.csprojResolveAssemblyReference.cache
+c:\users\oana\documents\visual studio 2017\Projects\tema2pssc\Gradina\bin\Debug\Models.Gradina.dll
+c:\users\oana\documents\visual studio 2017\Projects\tema2pssc\Gradina\bin\Debug\Models.Gradina.pdb
+c:\users\oana\documents\visual studio 2017\Projects\tema2pssc\Gradina\obj\Debug\Models.Gradina.dll
+c:\users\oana\documents\visual studio 2017\Projects\tema2pssc\Gradina\obj\Debug\Models.Gradina.pdb
