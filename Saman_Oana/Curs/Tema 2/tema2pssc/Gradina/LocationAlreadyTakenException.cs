@@ -11,7 +11,6 @@ namespace Models.Gradina
         public LocationAlreadyTakenException(string message)
             : base(message)
         {
-
         }
     }
 }

@@ -18,12 +18,18 @@ namespace Models.Gradina
 
         public Gradina CreeazaGradina(int nrLocatie)
         {
-            Contract.Requires<ArgumentInvalidException>(
-                    nrLocatie >= 1 && nrLocatie <= 50,
-                    "Dati un numar intre 1 si 50");
-
-            var gradina = new Gradina(nrLocatie);
-            return gradina;
+            try
+            {
+                if (nrLocatie < 1 || nrLocatie > 10)
+                    throw new ArgumentInvalidException("Dati un nr intre 1 si 10");
+                var gradina = new Gradina(nrLocatie);
+                return gradina;
+            }
+            catch(ArgumentInvalidException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return null;
         }
     }
 }

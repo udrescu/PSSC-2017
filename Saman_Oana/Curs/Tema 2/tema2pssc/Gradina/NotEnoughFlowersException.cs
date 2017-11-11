@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Models.Gradina
 {
-    public class NotEnoughFlowersException
+    public class NotEnoughFlowersException : SystemException
     {
+        public NotEnoughFlowersException(string message)
+            : base(message)
+        {
+        }
     }
+
 }

@@ -20,14 +20,22 @@ namespace Models.Gradina
 
         internal Legume(List<Leguma> legume)
         {
-            Contract.Requires(legume != null, "lista legumelor");
             this.legume = legume;
         }
 
         internal void AdaugaLeguma(Leguma leguma)
         {
-            Contract.Requires(leguma != null, "leguma");
             legume.Add(leguma);
+        }
+
+        public override string ToString()
+        {
+            return legume.Aggregate(new StringBuilder(), (builder,leguma) => {
+                if (builder.Length > 0) builder.Append(", ");
+                builder.Append(leguma);
+                return builder;
+            }).ToString();
+
         }
     }
 }

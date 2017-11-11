@@ -19,7 +19,6 @@ namespace Models.Gradina
 
         internal Floare(string nume, string culoare, int numar)
         {
-            Contract.Requires(nume != null, "nume");
             Nume = nume;
             Culoare = culoare;
             Numar = numar;

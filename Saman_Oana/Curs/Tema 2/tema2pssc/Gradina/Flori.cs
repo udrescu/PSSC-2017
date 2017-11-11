@@ -20,14 +20,22 @@ namespace Models.Gradina
 
         internal Flori(List<Floare> flori)
         {
-            Contract.Requires(flori != null, "lista florilor");
             this.flori = flori;
         }
 
         internal void AdaugaFloare(Floare floare)
         {
-            Contract.Requires(floare != null, "floare");
             flori.Add(floare);
-        }  
+        }
+
+        public override string ToString()
+        {
+            return flori.Aggregate(new StringBuilder(), (builder, floare) => {
+                if (builder.Length > 0) builder.Append(", ");
+                builder.Append(floare);
+                return builder;
+            }).ToString();
+
+        }
     }
 }

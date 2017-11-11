@@ -19,7 +19,6 @@ namespace Models.Gradina
 
         internal Leguma(string nume, TipLeguma tip, int numar)
         {
-            Contract.Requires(nume != null, "nume");
             Nume = nume;
             Tip = tip;
             Numar = numar;

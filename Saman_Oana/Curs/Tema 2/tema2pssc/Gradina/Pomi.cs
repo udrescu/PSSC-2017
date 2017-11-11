@@ -20,14 +20,22 @@ namespace Models.Gradina
 
         internal Pomi(List<Pom> pomi)
         {
-            Contract.Requires(pomi != null, "lista pomilor");
             this.pomi = pomi;
         }
 
         internal void AdaugaPom(Pom pom)
         {
-            Contract.Requires(pom != null, "pom");
             pomi.Add(pom);
+        }
+
+        public override string ToString()
+        {
+            return pomi.Aggregate(new StringBuilder(), (builder, pom) => {
+                if (builder.Length > 0) builder.Append(", ");
+                builder.Append(pom);
+                return builder;
+            }).ToString();
+
         }
     }
 }

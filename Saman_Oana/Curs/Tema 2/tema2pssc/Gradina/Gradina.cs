@@ -27,7 +27,6 @@ namespace Models.Gradina
 
         public void AdaugaFloare(string nume, string culoare, int numar)
         {
-            Contract.Requires(nume != null, "nume floare");
             var floare = Flori.Valori.FirstOrDefault(c => c.Nume.Equals(nume));
             if (locuriGradina > 0)
             {
@@ -43,7 +42,6 @@ namespace Models.Gradina
 
         public void AdaugaLeguma(string nume, TipLeguma tip, int numar)
         {
-            Contract.Requires(nume != null, "nume leguma");
             if (locuriGradina > 0)
             {
                 var leguma = new Leguma(nume, tip, numar);
@@ -58,7 +56,6 @@ namespace Models.Gradina
 
         public void AdaugaPom(string nume, int nota)
         {
-            Contract.Requires(nume != null, "nume pom");
             if (locuriGradina > 0)
             {
                 var pom = new Pom(nume, nota);
@@ -71,25 +68,59 @@ namespace Models.Gradina
             }
         }
 
-        public void DecoreazaCasaCuFlori(Floare floare, int numar)
+        public void DecoreazaCasaCuFlori(string numeFloare, int numar)
         {
-            floare.numar -= numar; //trebuie sa vad daca am destule flori
-            casaEsteDraguta = true;
+            var floare = Flori.Valori.FirstOrDefault(c => c.Nume.Equals(numeFloare));
+            try
+            {
+                if (floare.Numar - numar < 0)
+                    throw new NotEnoughFlowersException("Nu exista destule flori de tip " + floare.Nume);
+                floare.Numar -= numar; 
+                casaEsteDraguta = true;
+                Console.WriteLine("Am decorat casa cu flori.");
+            }
+            catch (NotEnoughFlowersException e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         public void AruncaFlorileDinCasa()
         {
+            Console.WriteLine("Am aruncat florile.");
             casaEsteDraguta = false;
         }
 
         public void SalataDeNota10()
         {
-            //primii 3 pomi cu nota maxima
+            int count = 0;
+            Console.Write("Am adaugat la salata ");
+            //primii 3 pomi cu nota mare
+            foreach (Pom pom in Pomi.Valori)
+            {
+                if (count >= 3)
+                    break;
+                if (pom.Nota > 7)
+                {
+                    Console.Write(pom.Nume + " ");
+                    count++;
+                }               
+            }
+            Console.WriteLine();
         }
 
         public void LegumePentruCiorba()
         {
             //seleccteaza doar radacinoasele
+            Console.Write("Am adaugat la ciorba ");
+            foreach (Leguma leguma in Legume.Valori)
+            {               
+                if (leguma.Tip == TipLeguma.Radacina)
+                {
+                    Console.Write(leguma.Nume + " ");
+                }
+            }
+            Console.WriteLine();
         }
 
         #region override object

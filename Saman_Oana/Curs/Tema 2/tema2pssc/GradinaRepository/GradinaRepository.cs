@@ -15,12 +15,18 @@ namespace Repositories.Gradina
         }
         public void AdaugaGradina(Models.Gradina.Gradina gradina)
         {
-            var result = gradini.FirstOrDefault(d => d.Equals(gradina));
-
-            if (result != null) throw new LocationAlreadyTakenException("Gradina exista deja la locatia" + gradina.nrLocatie);
-
-            gradini.Add(gradina);
-            Console.WriteLine("O noua gradina a fost plantata la locatia " + gradina.nrLocatie);
+            try
+            {
+                var result = gradini.FirstOrDefault(d => d.Equals(gradina));
+                if (result != null) throw new LocationAlreadyTakenException("Gradina exista deja la locatia" + gradina.nrLocatie);
+                gradini.Add(gradina);
+                Console.WriteLine("O noua gradina a fost plantata la locatia " + gradina.nrLocatie);
+            }
+            catch(LocationAlreadyTakenException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+         
         }
 
         public void StergeGradina(Models.Gradina.Gradina gradina)
@@ -28,12 +34,34 @@ namespace Repositories.Gradina
             Console.WriteLine("Gradina a fost deplantata.");
         }
 
-        public void CautaGradina(int nrLocatie)
+        public Models.Gradina.Gradina CautaGradina(int nrLocatie)
         {
-            if( gradini.FirstOrDefault(d => d.nrLocatie == nrLocatie) != null)
-                Console.WriteLine("Exista o gradina la locatia " + nrLocatie);
-            else
-                Console.WriteLine("Nu am gasit gradina la locatia " + nrLocatie);
+            return gradini.FirstOrDefault(d => d.nrLocatie == nrLocatie);
+        }
+
+        public void CautaLocuriOcupate()
+        {
+            Console.Write("Locuri ocupate: ");
+            foreach (Models.Gradina.Gradina gradina in gradini)
+            {
+                Console.Write(gradina.nrLocatie + " ");
+            }
+            Console.WriteLine();      
+        }
+
+        public void AfiseazaPomi(Models.Gradina.Gradina gradina)
+        {
+            Console.WriteLine(gradina.Pomi.ToString());
+        }
+
+        public void AfiseazaLegume(Models.Gradina.Gradina gradina)
+        {
+            Console.WriteLine(gradina.Legume.ToString());
+        }
+
+        public void AfiseazaFlori(Models.Gradina.Gradina gradina)
+        {
+            Console.WriteLine(gradina.Flori.Valori.ToString());
         }
     }
 }

@@ -17,7 +17,6 @@ namespace Models.Gradina
 
         internal Pom(string nume, int nota)
         {
-            Contract.Requires(nume != null, "nume");
             Nume = nume;
             Nota = nota;
         }
