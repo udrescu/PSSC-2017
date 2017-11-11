@@ -8,9 +8,9 @@ using WindowsFormsApp1.Repository;
 
 namespace WindowsFormsApp1.Services
 {
-    class EliberareScrisoare
+    public class EliberareScrisoare
     {
-        public static void eliberare_colet(string nume_destinatar)
+        public static void eliberare_scrisoare(string nume_destinatar)
         {
             foreach (Scrisoare scrisoare in StoreScrisori.listaScrisori)
             {

@@ -7,7 +7,7 @@ using WindowsFormsApp1.Models.Entities;
 
 namespace WindowsFormsApp1.Repository
 {
-    class StoreScrisori
+    public class StoreScrisori
     {
         public static List<Scrisoare> listaScrisori = new List<Scrisoare>();
 

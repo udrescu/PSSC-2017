@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Models.Entities
 {
-    class Scrisoare
+    public class Scrisoare
     {
         private string destinatar;
         private string expeditor;

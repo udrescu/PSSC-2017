@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Models.Entities
 {
-    class Colet
+    public class Colet
     {
         private string destinatar;
         private string expeditor;
@@ -45,5 +45,8 @@ namespace WindowsFormsApp1.Models.Entities
         public string Data_sosire { get => data_sosire; set => data_sosire = value; }
         public string Numar_inregistrare { get => numar_inregistrare; set => numar_inregistrare = value; }
         public bool Depozitat { get => depozitat; set => depozitat = value; }
+        public string Greutate { get => greutate; set => greutate = value; }
+
+
     }
 }

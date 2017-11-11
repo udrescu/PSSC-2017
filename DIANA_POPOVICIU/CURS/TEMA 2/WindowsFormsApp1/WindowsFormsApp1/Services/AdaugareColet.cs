@@ -8,7 +8,7 @@ using WindowsFormsApp1.Repository;
 
 namespace WindowsFormsApp1.Services
 {
-    class AdaugareColet
+    public class AdaugareColet
     {
         public static void adaugare_colet()
         {

@@ -7,7 +7,7 @@ using WindowsFormsApp1.Models.Entities;
 
 namespace WindowsFormsApp1.Repository
 {
-    class StoreColete
+    public class StoreColete
     {
         public static List<Colet> listColete = new List<Colet>();
     }

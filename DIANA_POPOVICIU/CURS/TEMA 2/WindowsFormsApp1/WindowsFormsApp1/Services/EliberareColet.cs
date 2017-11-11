@@ -8,7 +8,7 @@ using WindowsFormsApp1.Repository;
 
 namespace WindowsFormsApp1.Services
 {
-    class EliberareColet
+    public class EliberareColet
     {
         public static void eliberare_colet(string nume_destinatar, string numar_colet)
         {

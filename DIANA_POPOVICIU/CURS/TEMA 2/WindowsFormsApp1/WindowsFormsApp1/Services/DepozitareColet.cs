@@ -8,9 +8,9 @@ using WindowsFormsApp1.Repository;
 
 namespace WindowsFormsApp1.Services
 {
-    class DepozitareColet
+    public class DepozitareColet
     {
-        public static void eliberare_colet(string numar_colet)
+        public static void depozitare_colet(string numar_colet)
         {
             foreach (Colet colet in StoreColete.listColete)
             {
